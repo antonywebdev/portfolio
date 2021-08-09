@@ -5161,7 +5161,7 @@ h5,
   }
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link.active {
-  color: #d5c455 !important;
+  color: #d93333 !important
 }
 @media (max-width: 767.98px) {
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
@@ -5506,7 +5506,7 @@ textarea.form-control {
   margin-bottom: 15px;
 }
 .services:hover {
-  background: #d5c455;
+  background: #39434c;
   -webkit-box-shadow: 0 5px 25px -2px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0 5px 25px -2px rgba(0, 0, 0, 0.18);
   box-shadow: 0 5px 25px -2px rgba(0, 0, 0, 0.18);
