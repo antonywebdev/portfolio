@@ -3669,14 +3669,6 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
-#navbarSupportedContent {
-  position: absolute;
-  top: 85px;
-  left: 0px;
-  right: 0;
-  z-index: 3;
-  padding: 0;
-}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -3690,6 +3682,14 @@ progress {
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+  #navbarSupportedContent {
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    right: 0;
+    z-index: 3;
+    padding: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -5160,7 +5160,7 @@ h5,
   }
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link.active {
-  color: #d5c455 !important;
+  color: #d93333 !important;
 }
 @media (max-width: 767.98px) {
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {

@@ -5160,7 +5160,7 @@ h5,
   }
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link.active {
-  color: #d5c455 !important;
+  color: #d93333 !important;
 }
 @media (max-width: 767.98px) {
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
@@ -5421,8 +5421,8 @@ h5,
   font-size: 16px;
 }
 .btn.btn-primary {
-  background: #d5c455 !important;
-  border: 1px solid #d5c455 !important;
+  background: #d93333 !important;
+  border: 1px solid #d93333 !important;
   color: #fff !important;
 }
 .btn.btn-primary span {
@@ -5465,9 +5465,12 @@ h5,
 .form-control:-moz-placeholder {
   color: rgba(0, 0, 0, 0.3) !important;
 }
+.contact-wrap p {
+  color: #000;
+}
 .form-control:focus,
 .form-control:active {
-  border-color: #d5c455 !important;
+  border-color: #39434c !important;
 }
 textarea.form-control {
   height: inherit !important;
@@ -6371,4 +6374,10 @@ textarea.form-control {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+form#contactForm .form-group {
+  padding: 0px 0px 10px;
+}
+.contact-wrap .dbox .text p {
+  color: #000;
 }
