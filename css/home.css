@@ -3682,6 +3682,14 @@ progress {
   .container {
     max-width: 960px;
   }
+  #navbarSupportedContent {
+    position: absolute;
+    top: 85px;
+    left: -110px;
+    right: 0;
+    z-index: 3;
+    padding: 0;
+}
 }
 @media (min-width: 1200px) {
   .container,
