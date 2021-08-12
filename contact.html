@@ -81,26 +81,60 @@ Sayalkudi, Ramanathapuram - 623120</p>
 </div>
 
 </div>
-<form id="contactForm" name="contactForm" class="contactForm">
+<!-- <form id="contactForm" name="contactForm" class="contactForm" 
+action="/action_page.php" onsubmit="return validateForm()" 
+method="post"> -->
+<form id="contactForm" name="contactForm" class="contactForm"
+ onsubmit="return validateForm(event)" 
+method="post">
+<ul id="FormSubmitError"></ul>
+
 <div class="row">
 <div class="col-md-12">
 <div class="form-group">
-<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+<input type="text" class="form-control" name="name" id="name" placeholder="Name"
+required="required" data-error-label="Name">
+<span>*</span>
+<label id="error-name" class="form-field-error"></label>
+
+</div>
+</div>
+
+<div class="col-md-12">
+  <div class="form-group">
+  <input type="tel" id="phone" name="phone" 
+  pattern="[0-9]{10}"
+  class="form-control" placeholder="Phone Number"
+  required="required" data-error-label="Phone Number"/>
+  <span>*</span>
+  <label id="error-phone" class="form-field-error"></label>
+  </div>
+  </div>
+
+
+<div class="col-md-12">
+<div class="form-group">
+<input type="email" class="form-control" name="email" id="email" placeholder="Email"
+required="required" data-error-label="Email"/>
+<span>*</span>
+<label id="error-email" class="form-field-error"></label>
 </div>
 </div>
 <div class="col-md-12">
 <div class="form-group">
-<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+required="required" data-error-label="Subject"/>
+<span>*</span>
+<label id="error-subject" class="form-field-error"></label>
+
 </div>
 </div>
 <div class="col-md-12">
 <div class="form-group">
-<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-</div>
-</div>
-<div class="col-md-12">
-<div class="form-group">
-<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Create a message here"></textarea>
+<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Create a message here" required="required" data-error-label="Message"/>
+</textarea>
+<span>*</span>
+<label id="error-message" class="form-field-error"></label>
 </div>
 </div>
 <div class="col-md-12">
@@ -146,9 +180,6 @@ Sayalkudi, Ramanathapuram - 623120</p>
 </div>
 </div>
 </footer>
-
-
-
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/tiny-slider.js"></script>
 <script src="js/glightbox.min.js_aos.js_google-map.js_main.js.pagespeed.jc.s_me9a_ggy.js"></script><script>eval(mod_pagespeed_yUV23LgTwi);</script>
@@ -164,5 +195,6 @@ Sayalkudi, Ramanathapuram - 623120</p>
             gtag('config', 'UA-23581568-13');
           </script>
 <script defer src="beacon.min.js" data-cf-beacon='{"rayId":"6547670fbe2ffe1c","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.5.1","si":10}'></script>
+<script src="js/formValidation.js"></script>
 </body>
 </html>
