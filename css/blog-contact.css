@@ -6377,6 +6377,18 @@ textarea.form-control {
 }
 form#contactForm .form-group {
   padding: 0px 0px 10px;
+  position:relative;
+}
+form#contactForm .form-group span {
+  position: absolute;
+  right: 0px;
+  top: 12px;
+  color: red;
+}
+form#contactForm label.form-field-error {
+  color: red;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 .contact-wrap .dbox .text p {
   color: #000;
