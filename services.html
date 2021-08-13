@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
 <link rel="stylesheet" href="css/services.css" />
+<link rel="stylesheet" href="css/service-form.css" />
 </head>
 <body>
 <nav class="navbar ftco-navbar-light">
@@ -64,6 +65,9 @@
 <div class="text">
 <h2>UI/UX Design</h2>
 <p>A web designer is responsible for creating the design and layout of a website or web pages. It and can mean working on a brand new website or updating an already existing site. Their role is different to web developers, who specialise in making web designs a reality or writing code that dictates how different parts of the website fit together.</p>
+<a class="btn btn-primary enquire-now">
+  Enqire Now
+</a>
 </div>
 </div>
 </div>
@@ -73,6 +77,9 @@
 <div class="text">
 <h2>Web and Window Applications Development</h2>
 <p>a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.</p>
+<a class="btn btn-primary enquire-now">
+  Enqire Now
+</a>
 </div>
 </div>
 </div>
@@ -82,6 +89,9 @@
 <div class="text">
 <h2>Graphic Design / Logo & Layout Design</h2>
 <p>Graphic design is the profession and academic discipline whose activity consists in projecting visual communications intended to transmit specific messages to social groups, with specific objectives.</p>
+<a class="btn btn-primary enquire-now">
+  Enqire Now
+</a>
 </div>
 </div>
 </div>
@@ -93,6 +103,9 @@
 <p>
   Essentially, responsive design is a way to put together a website so that it automatically scales its content and elements to match the screen size on which it is viewed. It keeps images from being larger than the screen width, 
   and prevents visitors on mobile devices from needing to do extra work to read your content.</p>
+  <a class="btn btn-primary enquire-now">
+    Enqire Now
+  </a>
 </div>
 </div>
 </div>
@@ -103,7 +116,10 @@
 <h2>Marketing in SEO</h2>
 <p>SEO stands for “search engine optimization.” In simple terms, it means the process of improving your site to increase its visibility when people search for products or services related to your business in Google, Bing,
    and other search engines. The better visibility your pages have in search results, the more likely you are to garner attention and attract prospective and existing customers to your business.</p>
-</div>
+   <a class="btn btn-primary enquire-now">
+    Enqire Now
+  </a>
+  </div>
 </div>
 </div>
 <div class="col-md-6 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
@@ -114,6 +130,9 @@
 <p>
   Social media optimization (SMO) is the process of increasing awareness of a product, brand, or event on social media. SMO involves analyzing the content that will resonate most with an account’s followers, including graphics, text, hashtags, and links.
   </p>
+  <a class="btn btn-primary enquire-now">
+    Enqire Now
+  </a>
 </div>
 </div>
 </div>
@@ -126,6 +145,9 @@
   <p>
     Mobile app design is the task of designing mobile applications. Even though mobile apps have a wide variety of uses, what unifies them is the need for optimal usability, accessibility, engagement, and overall user experience.
   </p>
+  <a class="btn btn-primary enquire-now">
+    Enqire Now
+  </a>
 </div>
 </div>
 </div>
@@ -136,8 +158,12 @@
   <h2>Email & Video Marketing</h2>
   <p><b>Email marketing</b> allows you to build relationships with leads, customers and past customers. It's your opportunity to speak directly to them in their inbox, at a time that is convenient for them.
     <b>Video marketing</b> can be used for everything from building customer rapport, to promoting your brand, services or products
-  </p></div>
+  </p>
+  <a class="btn btn-primary enquire-now">
+    Enqire Now
+  </a>
 </div>
+  </div>
 </div>
 </div>
 </div>
@@ -167,5 +193,80 @@
     gtag('config', 'UA-23581568-13');
   </script>
 <script defer src="beacon.min.js" data-cf-beacon='{"rayId":"6547670cfa15fe0e","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.5.1","si":10}'></script>
+
+
+<div id="model" class="service-form">
+  <form id="serviceForm" name="contactForm" class="contactForm"
+  onsubmit="return validateForm(event)" 
+ method="post">
+ <ul id="FormSubmitError"></ul>
+ 
+<div class="row">
+  <div class="col-md-12 form-title-wrap">
+    <h4 class="form-title">Service Request form</h4>  
+    <div class="close-icon">
+      <span class="close ion-ios-close"></span>
+    </div>
+  </div>
+</div>
+ <div class="row">
+ <div class="col-md-12">
+ <div class="form-group">
+ <input type="text" class="form-control" name="name" id="name" placeholder="Name"
+ required="required" data-error-label="Name">
+ <span>*</span>
+ <label id="error-name" class="form-field-error"></label>
+ 
+ </div>
+ </div>
+ 
+ <div class="col-md-12">
+   <div class="form-group">
+   <input type="tel" id="phone" name="phone" 
+   pattern="[0-9]{10}"
+   class="form-control" placeholder="Phone Number"
+   required="required" data-error-label="Phone Number"/>
+   <span>*</span>
+   <label id="error-phone" class="form-field-error"></label>
+   </div>
+   </div>
+ 
+ 
+ <div class="col-md-12">
+ <div class="form-group">
+ <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+ required="required" data-error-label="Email"/>
+ <span>*</span>
+ <label id="error-email" class="form-field-error"></label>
+ </div>
+ </div>
+ <div class="col-md-12">
+ <div class="form-group">
+ <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+ required="required" data-error-label="Subject"/>
+ <span>*</span>
+ <label id="error-subject" class="form-field-error"></label>
+ 
+ </div>
+ </div>
+ <div class="col-md-12">
+ <div class="form-group">
+ <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Create a message here" required="required" data-error-label="Message"/>
+ </textarea>
+ <span>*</span>
+ <label id="error-message" class="form-field-error"></label>
+ </div>
+ </div>
+ <div class="col-md-12">
+ <div class="form-group">
+ <input type="submit" value="Send Message" class="btn btn-primary">
+ <div class="submitting"></div>
+ </div>
+ </div>
+ </div>
+ </form>
+</div>
+<script src="js/modelPopup.js"></script>
+<script src="js/formValidation.js"></script>
 </body>
 </html>

@@ -1,0 +1,82 @@
+body.overlay {
+    position: relative;
+    overflow: hidden;
+}
+body.overlay:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #00000085;
+}
+#model {
+position: fixed;
+top: 5%;
+left: 0px;
+z-index: 999;
+right: 0px;
+max-width: 75%;
+margin: 0 auto;
+background-color: #fff;
+padding: 30px;
+}
+.service-form {
+opacity: 0;
+visibility: hidden;
+transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+}
+.service-form.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.service-form h4.form-title {
+    text-align: center;
+}
+.service-form form#serviceForm .form-group {
+padding: 0px 0px 10px;
+position:relative;
+}
+.service-form form#serviceForm .form-group span {
+position: absolute;
+right: 0px;
+top: 12px;
+color: red;
+}
+.service-form form#serviceForm label.form-field-error {
+color: red;
+padding-top: 5px;
+padding-bottom: 10px;
+}
+.service-form .contact-wrap .dbox .text p {
+color: #000;
+}
+.service-form .contact-wrap .dbox .text p {
+    display: flex;
+}
+.service-form .contact-wrap span.svg-icon {
+padding-right: 12px;
+}
+.service-form .form-title-wrap {
+    display: inline-flex;
+    /* justify-content: center; */
+}
+.service-form h4.form-title {
+    width: 95%;
+    max-width: 95%;
+}
+.service-form .close-icon {
+    width: 5%;
+    max-width: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+.service-form span.close:before {
+    font-size: 27px;
+    font-weight: 500;
+}

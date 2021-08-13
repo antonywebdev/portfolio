@@ -6393,3 +6393,9 @@ form#contactForm label.form-field-error {
 .contact-wrap .dbox .text p {
   color: #000;
 }
+.contact-wrap .dbox .text p {
+    display: flex;
+}
+.contact-wrap span.svg-icon {
+  padding-right: 12px;
+}
