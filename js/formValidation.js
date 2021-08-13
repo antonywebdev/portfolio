@@ -1,5 +1,5 @@
 //var form = document.getElementById("contactForm");
-var form = document.querySelector("#contactForm");
+var form = document.querySelector("#contactForm, #serviceForm");
 var allInputs = form.querySelectorAll('input,select,textarea');
 
 
