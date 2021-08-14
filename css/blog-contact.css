@@ -3969,6 +3969,31 @@ progress {
     transition: none;
   }
 }
+input.form-control::-webkit-input-placeholder{ 
+  color: #000 !important;
+}
+input.form-control::-moz-placeholder {
+  color: #000 !important;
+}
+input.form-control:-ms-input-placeholder{
+  color: #000 !important;
+} 
+input.form-control:-moz-placeholder {
+  color: #000 !important;
+}
+
+textarea.form-control::-webkit-input-placeholder{ 
+  color: #000 !important;
+}
+textarea.form-control::-moz-placeholder {
+  color: #000 !important;
+}
+textarea.form-control:-ms-input-placeholder{
+  color: #000 !important;
+} 
+textarea.form-control:-moz-placeholder {
+  color: #000 !important;
+}
 .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: #dde0e3;
 }
@@ -6151,7 +6176,7 @@ textarea.form-control {
 }
 .contactForm .form-control {
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgb(0 0 0 / 22%);
   padding: 0;
 }
 .block-21 .blog-img {
@@ -6374,6 +6399,9 @@ textarea.form-control {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.ftco-section .box-border {
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 form#contactForm .form-group {
   padding: 0px 0px 10px;

@@ -1,7 +1,11 @@
 //var form = document.getElementById("contactForm");
 var form = document.querySelector("#contactForm, #serviceForm");
 var allInputs = form.querySelectorAll('input,select,textarea');
-
+let formType;
+function formtype(ele1) {
+	formType = ele1;
+	console.log(formType);
+}
 
 if (form != null) {
 	form.addEventListener(
@@ -30,9 +34,6 @@ if (form != null) {
 		});
 	});
 	function myValidation(ele) {
-        console.log(ele);
-        console.log(ele.dataset.errorLabel + 'error label');
-
 		var errorLabel = ele.dataset.errorLabel;
 		if (ele.value == "") {
 			ele.parentNode.querySelector(
@@ -50,9 +51,12 @@ if (form != null) {
 		var errorContainer = document.getElementById("FormSubmitError");
 		errorContainer.innerHTML = "";
 		e.preventDefault();
-		console.log(new URLSearchParams(new FormData(this)));
-		const formData = new URLSearchParams(new FormData(this));
-	});
+		for (i = 0; i < form.length; i++) {
+				if (form[i].nodeName === "INPUT") {
+					console.log(form[i].value.toLocaleUpperCase());
+				}
+			}
+});
 }
 
 
