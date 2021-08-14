@@ -15,11 +15,11 @@ body.overlay:after {
 }
 #model {
 position: fixed;
-top: 5%;
+top: 10%;
 left: 0px;
 z-index: 999;
 right: 0px;
-max-width: 75%;
+max-width: 50%;
 margin: 0 auto;
 background-color: #fff;
 padding: 30px;
@@ -59,6 +59,9 @@ color: #000;
 .service-form .contact-wrap .dbox .text p {
     display: flex;
 }
+.form-control:focus, .form-control:active {
+    border-color: #39434c !important;
+}
 .service-form .contact-wrap span.svg-icon {
 padding-right: 12px;
 }
@@ -79,4 +82,42 @@ padding-right: 12px;
 .service-form span.close:before {
     font-size: 27px;
     font-weight: 500;
+}
+@media (max-width: 769px) {
+#model {
+    position: fixed;
+    top: 10%;
+    left: 0px;
+    z-index: 999;
+    right: 0px;
+    max-width: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+}
+}
+input.form-control::-webkit-input-placeholder{ 
+    color: #000 !important;
+  }
+input.form-control::-moz-placeholder {
+    color: #000 !important;
+}
+input.form-control:-ms-input-placeholder{
+    color: #000 !important;
+} 
+input.form-control:-moz-placeholder {
+    color: #000 !important;
+}
+
+textarea.form-control::-webkit-input-placeholder{ 
+    color: #000 !important;
+  }
+  textarea.form-control::-moz-placeholder {
+    color: #000 !important;
+}
+textarea.form-control:-ms-input-placeholder{
+    color: #000 !important;
+} 
+textarea.form-control:-moz-placeholder {
+    color: #000 !important;
 }

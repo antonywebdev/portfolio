@@ -65,8 +65,8 @@
 <div class="text">
 <h2>UI/UX Design</h2>
 <p>A web designer is responsible for creating the design and layout of a website or web pages. It and can mean working on a brand new website or updating an already existing site. Their role is different to web developers, who specialise in making web designs a reality or writing code that dictates how different parts of the website fit together.</p>
-<a class="btn btn-primary enquire-now">
-  Enqire Now
+<a class="btn btn-primary enquire-now" onclick="formtype('UI/UX Design')">
+  Enquire Now
 </a>
 </div>
 </div>
@@ -77,8 +77,8 @@
 <div class="text">
 <h2>Web and Window Applications Development</h2>
 <p>a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.</p>
-<a class="btn btn-primary enquire-now">
-  Enqire Now
+<a class="btn btn-primary enquire-now" onclick="formtype('Web and Window Applications Development')">
+  Enquire Now
 </a>
 </div>
 </div>
@@ -89,8 +89,8 @@
 <div class="text">
 <h2>Graphic Design / Logo & Layout Design</h2>
 <p>Graphic design is the profession and academic discipline whose activity consists in projecting visual communications intended to transmit specific messages to social groups, with specific objectives.</p>
-<a class="btn btn-primary enquire-now">
-  Enqire Now
+<a class="btn btn-primary enquire-now" onclick="formtype('Graphic Design / Logo & Layout Design')">
+  Enquire Now
 </a>
 </div>
 </div>
@@ -103,8 +103,8 @@
 <p>
   Essentially, responsive design is a way to put together a website so that it automatically scales its content and elements to match the screen size on which it is viewed. It keeps images from being larger than the screen width, 
   and prevents visitors on mobile devices from needing to do extra work to read your content.</p>
-  <a class="btn btn-primary enquire-now">
-    Enqire Now
+  <a class="btn btn-primary enquire-now" onclick="formtype('Responsive Web Design')">
+    Enquire Now
   </a>
 </div>
 </div>
@@ -116,8 +116,8 @@
 <h2>Marketing in SEO</h2>
 <p>SEO stands for “search engine optimization.” In simple terms, it means the process of improving your site to increase its visibility when people search for products or services related to your business in Google, Bing,
    and other search engines. The better visibility your pages have in search results, the more likely you are to garner attention and attract prospective and existing customers to your business.</p>
-   <a class="btn btn-primary enquire-now">
-    Enqire Now
+   <a class="btn btn-primary enquire-now" onclick="formtype('Marketing in SEO')">
+    Enquire Now
   </a>
   </div>
 </div>
@@ -130,8 +130,8 @@
 <p>
   Social media optimization (SMO) is the process of increasing awareness of a product, brand, or event on social media. SMO involves analyzing the content that will resonate most with an account’s followers, including graphics, text, hashtags, and links.
   </p>
-  <a class="btn btn-primary enquire-now">
-    Enqire Now
+  <a class="btn btn-primary enquire-now" onclick="formtype('SMO')">
+    Enquire Now
   </a>
 </div>
 </div>
@@ -145,8 +145,8 @@
   <p>
     Mobile app design is the task of designing mobile applications. Even though mobile apps have a wide variety of uses, what unifies them is the need for optimal usability, accessibility, engagement, and overall user experience.
   </p>
-  <a class="btn btn-primary enquire-now">
-    Enqire Now
+  <a class="btn btn-primary enquire-now" onclick="formtype('Mobile App Design')">
+    Enquire Now
   </a>
 </div>
 </div>
@@ -159,8 +159,8 @@
   <p><b>Email marketing</b> allows you to build relationships with leads, customers and past customers. It's your opportunity to speak directly to them in their inbox, at a time that is convenient for them.
     <b>Video marketing</b> can be used for everything from building customer rapport, to promoting your brand, services or products
   </p>
-  <a class="btn btn-primary enquire-now">
-    Enqire Now
+  <a class="btn btn-primary enquire-now"  onclick="formtype('Email & Video Marketing')">
+    Enquire  Now
   </a>
 </div>
   </div>
@@ -196,8 +196,7 @@
 
 
 <div id="model" class="service-form">
-  <form id="serviceForm" name="contactForm" class="contactForm"
-  onsubmit="return validateForm(event)" 
+  <form id="serviceForm" name="contactForm" class="contactForm" 
  method="post">
  <ul id="FormSubmitError"></ul>
  
@@ -210,7 +209,7 @@
   </div>
 </div>
  <div class="row">
- <div class="col-md-12">
+ <div class="col-md-6">
  <div class="form-group">
  <input type="text" class="form-control" name="name" id="name" placeholder="Name"
  required="required" data-error-label="Name">
@@ -220,7 +219,7 @@
  </div>
  </div>
  
- <div class="col-md-12">
+ <div class="col-md-6">
    <div class="form-group">
    <input type="tel" id="phone" name="phone" 
    pattern="[0-9]{10}"
@@ -242,17 +241,7 @@
  </div>
  <div class="col-md-12">
  <div class="form-group">
- <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
- required="required" data-error-label="Subject"/>
- <span>*</span>
- <label id="error-subject" class="form-field-error"></label>
- 
- </div>
- </div>
- <div class="col-md-12">
- <div class="form-group">
- <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Create a message here" required="required" data-error-label="Message"/>
- </textarea>
+ <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Create a message here" required="required" data-error-label="Message"/></textarea>
  <span>*</span>
  <label id="error-message" class="form-field-error"></label>
  </div>
