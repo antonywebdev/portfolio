@@ -6427,3 +6427,8 @@ form#contactForm label.form-field-error {
 .contact-wrap span.svg-icon {
   padding-right: 12px;
 }
+.contact-wrap p.status-message {
+    padding-top: 10px;
+    color: #39434c;
+    font-weight: 600;
+}
