@@ -103,9 +103,11 @@ Sayalkudi, Ramanathapuram - 623120</p>
 <!-- <form id="contactForm" name="contactForm" class="contactForm" 
 action="/action_page.php" onsubmit="return validateForm()" 
 method="post"> -->
-<form id="contactForm" name="contactForm" class="contactForm"
+<!-- <form id="contactForm" name="contactForm" class="contactForm"
  onsubmit="return validateForm(event)" 
-method="post">
+ action="https://formspree.io/f/xnqlopyg" method="post"> -->
+ <form id="contactForm" name="contactForm" class="contactForm"
+ action="https://formspree.io/f/xnqlopyg" method="post" onsubmit="return validateForm()">
 <ul id="FormSubmitError"></ul>
 
 <div class="row">
@@ -160,6 +162,7 @@ required="required" data-error-label="Subject"/>
 <div class="form-group">
 <input type="submit" value="Send Message" class="btn btn-primary">
 <div class="submitting"></div>
+<p id="my-form-status" class="status-message"></p>
 </div>
 </div>
 </div>
