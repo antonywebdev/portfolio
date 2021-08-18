@@ -107,7 +107,7 @@ method="post"> -->
  onsubmit="return validateForm(event)" 
  action="https://formspree.io/f/xnqlopyg" method="post"> -->
  <form id="contactForm" name="contactForm" class="contactForm"
- action="https://formspree.io/f/xnqlopyg" method="post" onsubmit="return validateForm()">
+ action="https://formspree.io/f/xnqlopyg" method="post">
 <ul id="FormSubmitError"></ul>
 
 <div class="row">
@@ -162,6 +162,7 @@ required="required" data-error-label="Subject"/>
 <div class="form-group">
 <input type="submit" value="Send Message" class="btn btn-primary">
 <div class="submitting"></div>
+<div id="loader"></div>
 <p id="my-form-status" class="status-message"></p>
 </div>
 </div>
