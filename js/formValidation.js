@@ -1,6 +1,9 @@
 //var form = document.getElementById("contactForm");
 var form = document.querySelector("#contactForm, #serviceForm");
 var allInputs = form.querySelectorAll('input,select,textarea');
+
+var spinner = document.getElementById("loader");
+
 let formType;
 function formtype(ele1) {
 	formType = ele1;
@@ -57,6 +60,7 @@ if (form != null) {
 		}
   async function handleSubmit(event) {
     event.preventDefault();
+	spinner.style.display = 'block';
     var status = document.getElementById("my-form-status");
     var data = new FormData(event.target);
 	console.log(new FormData(event.target), 'schema');
@@ -69,9 +73,11 @@ if (form != null) {
           'Accept': 'application/json'
       }
     }).then(response => {
+		spinner.style.display = 'none';
       status.innerHTML = "Thanks for your submission! We will get back to you";
       form.reset()
     }).catch(error => {
+		spinner.style.display = 'none';
       status.innerHTML = "Oops! There was a problem submitting your form"
     });
   }
