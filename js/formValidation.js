@@ -61,25 +61,24 @@ if (form != null) {
   async function handleSubmit(event) {
     event.preventDefault();
 	spinner.style.display = 'block';
-    var status = document.getElementById("my-form-status");
-    var data = new FormData(event.target);
-	console.log(new FormData(event.target), 'schema');
-	console.log(event, 'schema event');
-
-    fetch(event.target.action, {
-      method: form.method,
-      body: data,
-      headers: {
-          'Accept': 'application/json'
-      }
-    }).then(response => {
-		spinner.style.display = 'none';
-      status.innerHTML = "Thanks for your submission! We will get back to you";
-      form.reset()
-    }).catch(error => {
-		spinner.style.display = 'none';
-      status.innerHTML = "Oops! There was a problem submitting your form"
-    });
+	Email.send({
+  Host: "smtp.gmail.com",
+  Username : "noreplyantonydev@gmail.com",
+  Password : "AntonyDev@1994",
+  To : 'antonywebdevelopment@gmail.com',
+  From : "noreplyantonydev@gmail.com",
+  Subject : "subject",
+  Body : "body",
+  Attachments : [
+  	{
+  		name : "smtpjs.png",
+  		path:"https://networkprogramming.files.wordpress.com/2017/11/smtpjs.png"
+  	}]
+  }).then(
+  	message => status.innerHTML = alert("mail sent successfully")
+	  
+  );
+  spinner.style.display = 'none';
   }
   form.addEventListener("submit", handleSubmit)
 

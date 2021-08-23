@@ -137,3 +137,17 @@ textarea.form-control:-moz-placeholder {
     color: #39434c;
     font-weight: 600;
 }
+form#contactForm label.form-field-error {
+    color: red;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  .service-form .form-group {
+    position: relative;
+}
+.service-form .form-group span {
+    position: absolute;
+    right: 0px;
+    top: 13px;
+    color: red;
+}
