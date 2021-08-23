@@ -1,13 +1,11 @@
 //var form = document.getElementById("contactForm");
 var form = document.querySelector("#contactForm, #serviceForm");
 var allInputs = form.querySelectorAll('input,select,textarea');
-
 var spinner = document.getElementById("loader");
-
-let formType;
+let formType = 'Contact Form';
 function formtype(ele1) {
 	formType = ele1;
-	console.log(formType);
+	console.log(formType); 
 }
 
 if (form != null) {
@@ -58,6 +56,69 @@ if (form != null) {
 		if(form == undefined || form  == null) {
 			form = document.getElementById("serviceForm");
 		}
+
+	var name = document.getElementsByName("name")[0].value;
+	var phone = document.getElementsByName("phone")[0].value;
+	var email = document.getElementsByName("email")[0].value;
+	var message = document.getElementsByName("message")[0].value;
+	
+	
+
+	let table;
+	table = "<html><head></head><body bgcolor='white' text='#000000' >" +
+            "<div style='background-color:white;' align='center'><br />" +
+            "<table style='font-family: Arial, Helvetica, sans-serif; color: #666666; font-size: 10px; border:1px solid #c3d5e4;padding:1px;-moz-border-radius:1px;-moz-border-radius:1px;-webkit-box-shadow:0px 0px 1px #000; -moz-box-shadow:0px 1px 1px #000;box-shadow:0px 1px 1px #000;z-index:1;' " +
+            "border='0' width='700' cellspacing='0' cellpadding='0' align='center' bgcolor='#FFFFFF'>" +
+            "<tbody><tr><td colspan='2' bgcolor='#FFFFFF'  align='left' style='color:#3E4D9C;text-decoration:none;text-indent:-9999px;'>" +
+            "<table><tr>"+
+"<tr><td width='700' align='center' >" +
+
+"<!-- inside table start-->" +
+            "<table width='680' style='font:normal 12px Verdana, Geneva, sans-serif;color:#5b5386;'>" +
+"<tr><td valign='middle' style='background-color:#39434c;color:#FFFFFF;text-align:center;' height='20' align='left'>&nbsp; <b>" + formType + " Submission</b> </td></tr>" +
+//Name
+            "<tr><td valign='middle'  height='10' width='680' align='center' ><table width='300'><tr><td height='0' width='100'> Name</td><td width='30' align='center' >:</td><td width='170'>" + name   + "</td></tr></table> </td> </tr>" +
+"<tr><td valign='middle' height='10'></td></tr>" +
+// Form Type
+"<tr><td valign='middle'  height='10' width='680' align='center' ><table width='300'><tr><td height='0' width='100'> Form Type   </td><td width='30' align='center' >:</td><td width='170'>" + formType  + "</td></tr></table> </td> </tr>" +
+
+"<tr><td valign='middle' height='10'></td></tr>" +
+//phone  
+            "<tr><td valign='middle'  height='10' width='680' align='center' ><table width='300'><tr><td height='0' width='100'> Phone Number   </td><td width='30' align='center' >:</td><td width='170'>" + phone  + "</td></tr></table> </td> </tr>" +
+
+"<tr><td valign='middle' height='10'></td></tr>" +
+//Email Id 
+            "<tr><td valign='middle'  height='10' width='680' align='center' ><table width='300'><tr><td height='0' width='100'> Email Id </td><td width='30' align='center' >:</td><td width='170'>" + email  + "</td></tr></table> </td> </tr>" +
+
+"<tr><td valign='middle' height='10'></td></tr>" +
+
+//Message
+"<tr><td valign='middle'  height='10' width='680' align='center' ><table width='300'><tr><td height='0' width='100'> Message </td><td width='30' align='center' >:</td><td width='170'>" + message  + "</td></tr></table> </td> </tr>" +
+
+"<tr><td valign='middle' height='10'></td></tr>" +
+                //line
+            "<tr ><td height='1' style='background-color:#39434c;'></td></tr>" +
+
+
+
+"<tr><td valign='middle' height='20'></td></tr>" +
+
+
+
+"</table><!--inside table End-->" +
+
+"</td></tr>" +
+
+"<tr><td style='color: #ffffff; padding: 5px; font-size: 10px;' colspan='2' align='center' bgcolor='#999999'>" +
+            "© Copyrights Antony Dev 2021. All Rights Reserved." +
+            "</td></tr>" +
+
+"</tbody></table><p>&nbsp;</p>" +
+            "</div> " +
+            "</body></html>";
+
+
+
   async function handleSubmit(event) {
     event.preventDefault();
 	spinner.style.display = 'block';
@@ -68,7 +129,7 @@ if (form != null) {
   To : 'antonywebdevelopment@gmail.com',
   From : "noreplyantonydev@gmail.com",
   Subject : "subject",
-  Body : "body",
+  Body : table,
   Attachments : [
   	{
   		name : "smtpjs.png",
