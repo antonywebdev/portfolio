@@ -5620,7 +5620,7 @@ textarea.form-control {
 }
 @media (max-width: 575.98px) {
   .ftco-section {
-    padding: 6em 0;
+    padding: 6em 10px 0px;
   }
 }
 .ftco-footer {
@@ -5921,6 +5921,7 @@ textarea.form-control {
 }
 .project {
   width: 100%;
+  background-size: cover;
   height: 350px;
   margin-bottom: 30px;
   position: relative;
@@ -5944,7 +5945,7 @@ textarea.form-control {
 }
 @media (max-width: 575.98px) {
   .project .overlay {
-    opacity: 0.2;
+    opacity: 0.8;
   }
 }
 .project .text {
@@ -6371,4 +6372,44 @@ textarea.form-control {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+/* demo request */
+.wrapper-demo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.wrapper-demo .align-center {
+  justify-content: center;
+}
+.wrapper-demo .form-group {
+  position: relative;
+}
+.wrapper-demo span {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  color: red;
+}
+.wrapper-demo label.form-field-error {
+  color: red;
+  padding: 10px 0px;
+}
+.wrapper-demo img.demo-image {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 750px) {
+  .wrapper-demo {
+    margin: 5px;
+  }
+  .wrapper-demo .request-col {
+    padding: 30px 20px;
+  }
+  .wrapper-demo .project {
+    width: 100%;
+    background-size: contain;
+  }
 }
