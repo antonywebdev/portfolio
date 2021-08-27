@@ -5935,7 +5935,7 @@ textarea.form-control {
   bottom: 0;
   content: "";
   opacity: 0;
-  background: #d5c455;
+  background: #39434c;
   z-index: -1;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
