@@ -2,7 +2,10 @@
 var form = document.querySelector("#contactForm, #serviceForm");
 var allInputs = form.querySelectorAll('input,select,textarea');
 var spinner = document.getElementById("loader");
+let capcha =  Math.random().toString(36).substring(2, 4) + Math.random().toString(36).substring(2, 5);
 let formType = 'Contact Form';
+document.getElementsByName("img-capcha")[0].value = capcha;
+console.log(capcha);
 function formtype(ele1) {
 	formType = ele1;
 	console.log(formType); 
@@ -121,7 +124,6 @@ if (form != null) {
 
   async function handleSubmit(event) {
     event.preventDefault();
-	spinner.style.display = 'block';
 	Email.send({
   Host: "smtp.gmail.com",
   Username : "noreplyantonydev@gmail.com",
@@ -139,7 +141,6 @@ if (form != null) {
   	message => status.innerHTML = alert("mail sent successfully")
 	  
   );
-  spinner.style.display = 'none';
   }
   form.addEventListener("submit", handleSubmit)
 

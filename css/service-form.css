@@ -151,3 +151,18 @@ form#contactForm label.form-field-error {
     top: 13px;
     color: red;
 }
+.service-form .form-group.capcha {
+    display: flex;
+    justify-content: space-between;
+}
+.service-form .capcha-block-one {
+  width: 55%;
+}
+.service-form .capcha-block-two {
+    width: 35%;
+}
+
+.service-form .capcha-image {
+  border: none !important;
+  text-align: center;
+}
