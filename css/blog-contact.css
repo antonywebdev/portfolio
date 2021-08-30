@@ -6432,6 +6432,20 @@ form#contactForm label.form-field-error {
     color: #39434c;
     font-weight: 600;
 }
+.contact-wrap .form-group.capcha {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-wrap .capcha-block-one {
+  width: 60%;
+}
+.contact-wrap .capcha-block-one {
+  width: 40%;
+}
+.contact-wrap .capcha-image {
+  border: none !important;
+  text-align: center;
+}
 #loader {
   display: none;
   position: fixed;
