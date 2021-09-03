@@ -52,7 +52,7 @@ if (form != null) {
 		}
 	}
 	form.addEventListener("submit", function (e) {
-		document.getElementsByName("name")[0].value
+		document.getElementsByName("name")[0].value;
 		var txtCacha = document.getElementsByName("capcha")[0].value;
 		if (capcha != txtCacha) {
 			e.preventDefault();
@@ -62,6 +62,7 @@ if (form != null) {
 		var errorContainer = document.getElementById("FormSubmitError");
 		errorContainer.innerHTML = "";
 		e.preventDefault();
+		spinner.classList.add('active');    
 		var form = document.getElementById("contactForm");
 		if(form == undefined || form  == null) {
 			form = document.getElementById("serviceForm");
@@ -126,18 +127,14 @@ if (form != null) {
 "</tbody></table><p>&nbsp;</p>" +
             "</div> " +
             "</body></html>";
-
-
-
-  async function handleSubmit(event) {
-    event.preventDefault();
-	Email.send({
+			spinner.classList.remove('active');    
+			Email.send({
   Host: "smtp.gmail.com",
   Username : "noreplyantonydev@gmail.com",
   Password : "AntonyDev@1994",
   To : 'antonywebdevelopment@gmail.com',
   From : "noreplyantonydev@gmail.com",
-  Subject : "subject",
+  Subject : formType,
   Body : table,
   Attachments : [
   	{
@@ -148,10 +145,8 @@ if (form != null) {
   	message => status.innerHTML = alert("mail sent successfully")
 	  
   );
-  }
-  form.addEventListener("submit", handleSubmit)
+
 });
-	
 }
 
 

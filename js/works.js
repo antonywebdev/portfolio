@@ -90,19 +90,14 @@ if (form != null) {
 "</tbody></table><p>&nbsp;</p>" +
             "</div> " +
             "</body></html>";
-
-
-
-  async function handleSubmit(event) {
-    event.preventDefault();
-	spinner.style.display = 'block';
-	Email.send({
+			spinner.classList.remove('active');    
+			Email.send({
   Host: "smtp.gmail.com",
   Username : "noreplyantonydev@gmail.com",
   Password : "AntonyDev@1994",
   To : 'antonywebdevelopment@gmail.com',
   From : "noreplyantonydev@gmail.com",
-  Subject : "subject",
+  Subject : formType,
   Body : table,
   Attachments : [
   	{
@@ -113,9 +108,6 @@ if (form != null) {
   	message => status.innerHTML = alert("mail sent successfully")
 	  
   );
-  spinner.style.display = 'none';
-  }
-  form.addEventListener("submit", handleSubmit)
 
 });
 }
