@@ -165,4 +165,11 @@ form#contactForm label.form-field-error {
 .service-form .capcha-image {
   border: none !important;
   text-align: center;
+    background-color: #e9ecef;
+    opacity: 1;
+    font-size: 19px;
+    font-weight: 700;
+}
+.service-form .active {
+    display: block !important;
 }

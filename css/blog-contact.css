@@ -6445,6 +6445,10 @@ form#contactForm label.form-field-error {
 .contact-wrap .capcha-image {
   border: none !important;
   text-align: center;
+    background-color: #e9ecef;
+    opacity: 1;
+    font-size: 19px;
+    font-weight: 700;
 }
 #loader {
   display: none;
@@ -6456,4 +6460,7 @@ form#contactForm label.form-field-error {
   width: 100%;
   background: rgba(0,0,0,0.75) url(../images/loading.gif) no-repeat center center;
   z-index: 10000;
+}
+form#contactForm .active {
+  display: block !important;
 }
