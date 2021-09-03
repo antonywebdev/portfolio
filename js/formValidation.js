@@ -52,6 +52,13 @@ if (form != null) {
 		}
 	}
 	form.addEventListener("submit", function (e) {
+		document.getElementsByName("name")[0].value
+		var txtCacha = document.getElementsByName("capcha")[0].value;
+		if (capcha != txtCacha) {
+			e.preventDefault();
+			document.querySelector("#error-capcha").innerText = `Please enter a valid cacha`;
+			return false;
+		}
 		var errorContainer = document.getElementById("FormSubmitError");
 		errorContainer.innerHTML = "";
 		e.preventDefault();
@@ -143,8 +150,8 @@ if (form != null) {
   );
   }
   form.addEventListener("submit", handleSubmit)
-
 });
+	
 }
 
 
