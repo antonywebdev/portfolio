@@ -5878,10 +5878,11 @@ textarea.form-control {
   color:#d93333;
 }
 .resume-wrap {
-  background: #fff;
-  padding: 30px;
-  margin-bottom: 50px;
-  position: relative;
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    min-height: 330px;
 }
 .resume-wrap .icon {
   width: 60px;
